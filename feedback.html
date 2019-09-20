@@ -221,7 +221,7 @@
                 onFail: function (err) {
                     dd.device.notification.alert({
                         message: "DD userGet fail: " + JSON.stringify(err),
-                        title: "Huooo",
+                        title: "Feedback",
                         buttonName: "OK"
                     });
                 }
@@ -230,7 +230,7 @@
         dd.error(function(err) {
             dd.device.notification.alert({
                 message: "DD error: " + JSON.stringify(err),
-                title: "Huooo",
+                title: "Feedback",
                 buttonName: "OK"
             });
         });
@@ -243,7 +243,7 @@
         if(nickname===''){
             dd.device.notification.alert({
                 message: "Please enter your nickname.",
-                title: "Huooo",
+                title: "Feedback",
                 buttonName: "OK"
             });
             return false;
@@ -251,7 +251,7 @@
         if(feedback===''){
             dd.device.notification.alert({
                 message: "Please enter your feedback.",
-                title: "Huooo",
+                title: "Feedback",
                 buttonName: "OK"
             });
             return false;
@@ -270,7 +270,7 @@
                         // alert('8. 提交内容：'+ nickname +','+ feedback );
                         dd.device.notification.alert({
                             message: "Success. Thank you.",
-                            title: "Huooo",
+                            title: "Feedback",
                             buttonName: "OK",
                             onSuccess: function(){
                                 $('#feedback').val('');
